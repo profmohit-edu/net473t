@@ -344,6 +344,15 @@ p {
   border-color: #aebed2;
 }
 
+.resource.static {
+  color: var(--ink);
+}
+
+.resource.static:hover {
+  transform: none;
+  border-color: var(--line);
+}
+
 .resource strong {
   display: block;
   margin-top: 8px;
@@ -402,6 +411,20 @@ p {
 .button-row a:hover {
   background: #e8f0fb;
   border-color: #abc0d9;
+}
+
+.resource-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 16px;
+  color: var(--muted);
+  background: #fff;
+  border: 1px dashed var(--line);
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 .split {
