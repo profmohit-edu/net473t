@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://profmohit-edu.github.io/net473t/sitemap.xml
