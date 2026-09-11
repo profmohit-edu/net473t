@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>NET-473T_Unit_II_Notes</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">NET-473T_Unit_II_Notes</h1>
+</header>
+<p><strong>Cloud Computing and Security (NET-473T)</strong></p>
+<h1 id="unit-ii-cloud-infrastructure-security">Unit II: Cloud
+Infrastructure Security</h1>
+<p>Course Outcome: CO2</p>
+<h2 id="official-scope">Official Scope</h2>
+<ul>
+<li><p>Hybrid migration needs security planning before migration, during
+transfer, at cutover and during integration.</p></li>
+<li><p>Pre-migration controls: asset inventory, data classification,
+dependency mapping, identity model, network design and rollback
+planning.</p></li>
+<li><p>During migration: encrypted transfer, temporary-access
+governance, migration-tool security, validation and log
+preservation.</p></li>
+</ul>
+<h2 id="beginner-friendly-lecture-notes">Beginner-Friendly Lecture
+Notes</h2>
+<h3 id="hybrid-migration-needs-security-planning-b">1. Hybrid migration
+needs security planning b</h3>
+<p>Hybrid migration needs security planning before migration, during
+transfer, at cutover and during integration.</p>
+<p>Exam angle: define the term, explain why it matters in cloud
+security, give one example, and mention a control or evidence item.</p>
+<h3 id="pre-migration-controls">2. Pre-migration controls</h3>
+<p>Pre-migration controls: asset inventory, data classification,
+dependency mapping, identity model, network design and rollback
+planning.</p>
+<p>Exam angle: define the term, explain why it matters in cloud
+security, give one example, and mention a control or evidence item.</p>
+<h3 id="during-migration">3. During migration</h3>
+<p>During migration: encrypted transfer, temporary-access governance,
+migration-tool security, validation and log preservation.</p>
+<p>Exam angle: define the term, explain why it matters in cloud
+security, give one example, and mention a control or evidence item.</p>
+<h3 id="integration-risks">4. Integration risks</h3>
+<p>Integration risks: inconsistent policies, split monitoring,
+trust-boundary confusion and identity synchronization errors.</p>
+<p>Exam angle: define the term, explain why it matters in cloud
+security, give one example, and mention a control or evidence item.</p>
+<h3 id="configuration-management">5. Configuration management</h3>
+<p>Configuration management: secure baselines, infrastructure as code,
+drift detection and exception handling.</p>
+<p>Exam angle: define the term, explain why it matters in cloud
+security, give one example, and mention a control or evidence item.</p>
+<h3 id="patch-management">6. Patch management</h3>
+<p>Patch management: ownership, severity, testing, deployment windows,
+emergency patches and verification.</p>
+<p>Exam angle: define the term, explain why it matters in cloud
+security, give one example, and mention a control or evidence item.</p>
+<h3 id="change-management">7. Change management</h3>
+<p>Change management: request, risk assessment, approval,
+implementation, rollback and audit evidence.</p>
+<p>Exam angle: define the term, explain why it matters in cloud
+security, give one example, and mention a control or evidence item.</p>
+<h3 id="compute-security">8. Compute security</h3>
+<p>Compute security: hardened images, workload identity, network
+segmentation, vulnerability scans, endpoint protection and immutable
+replacement.</p>
+<p>Exam angle: define the term, explain why it matters in cloud
+security, give one example, and mention a control or evidence item.</p>
+<h3 id="storage-security">9. Storage security</h3>
+<p>Storage security: private access, encryption, bucket/container
+policies, versioning, backups, retention and recovery testing.</p>
+<p>Exam angle: define the term, explain why it matters in cloud
+security, give one example, and mention a control or evidence item.</p>
+<h3 id="infrastructure-audit">10. Infrastructure audit</h3>
+<p>Infrastructure audit: scope, evidence, best practices, automated
+checks and corrective-action tracking.</p>
+<p>Exam angle: define the term, explain why it matters in cloud
+security, give one example, and mention a control or evidence item.</p>
+<h2 id="classroom-caselet">Classroom Caselet</h2>
+<p>Assume BVCOE is moving a student academic portal to cloud. Identify
+the asset, risk, responsible party, preventive control, detective
+control and audit evidence. This one case can be reused across all four
+units by changing the security layer being studied.</p>
+<h2 id="must-prepare-questions">Must-Prepare Questions</h2>
+<ul>
+<li><p>Explain security considerations during on-prem to cloud
+migration.</p></li>
+<li><p>Analyse hybrid cloud integration risks.</p></li>
+<li><p>Discuss configuration, patch and change management in
+cloud.</p></li>
+<li><p>Explain cloud infrastructure audit with best practices.</p></li>
+<li><p>Prepare a hybrid migration risk-control matrix.</p></li>
+<li><p>Create a secure configuration baseline checklist.</p></li>
+<li><p>Design a patch and change-management workflow.</p></li>
+<li><p>Audit storage and compute settings for a fictional case.</p></li>
+</ul>
+<h2 id="high-scoring-answer-formula">High-Scoring Answer Formula</h2>
+<ul>
+<li><p>Start with a precise definition.</p></li>
+<li><p>Draw or describe architecture/lifecycle/pipeline where
+relevant.</p></li>
+<li><p>Mention risk, control and audit evidence.</p></li>
+<li><p>Use syllabus words directly.</p></li>
+<li><p>Close with limitation or best-practice statement.</p></li>
+</ul>
+</body>
+</html>
